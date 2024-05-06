@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    color: #ecf0ec;
+}
+
+body {
+
+    background: linear-gradient(to left, #221c2c, #584596);
+    border: 1rem solid #252723fd;
+    max-height: 100rem;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #ed21dc;
+    border: 1px solid #914886;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #b862e9;
+}
+
+button:hover>i {
+    color: #fff;
+}
+
+button i {
+    pointer-events: none;
+    color: #102f5e;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    
+    margin: 6px 3px 0 3px;
+    border-radius: 7px;
+    border-bottom: 2px solid #75e414;
+    background-image: url(./bnwocicc.png);  
+}
+.header section{
+    
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+    }
+
+    img {
+        margin-top: 5px;
+    }
+.header section h2 {
+    color: #f8f5f8;
+    font-size: 2.5rem;
+    text-align:center;
+    
+}
+
+.principal {
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.todo-container {
+    height: 15rem;
+    width: 35rem;
+    margin: 3rem 0 0 4rem;
+    background-color: #010101aa;
+    border-radius:15px;
+     
+}
+
+#todo-form,
+#edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #83627e;
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+    color: #080808;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+    color: #ad9090;
+}
+
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #83627e;
+    display: flex;
+
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+    color: #010101;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#filter select {
+    flex: 1;
+    color: #080808;
+}
+
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #83627e;
+    transition: 0.3s;
+    margin-right: 12rem;
+    margin-top: 2rem;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background: #395169;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+
+
+.tiempo-container {
+    display: flex;
+    margin-left: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 9px;
+    background-color: #c18bc347;
+    height: 300px;
+    width: 230px;
+    border-radius: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#timer {
+
+    font-size: 3rem;
+    color: #fff;
+    background-color: #333333ad;
+    padding: 20px;
+    border-radius: 60rem;
+    text-align: center;
+    height: 7rem;
+    margin-top: 1rem;
+}
+.cajabotoes{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+#startButton,
+#resetButton,
+#startBreakButton,
+#pauseButton {
+
+
+    background-color: #e871ec;
+    color: #fff;
+    padding: 7px 10px 5px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 2rem;
+
+
+}
+
+#startButton:hover,
+#resetButton:hover,
+#startBreakButton:hover,
+#pauseButton:hover {
+
+    background-color: #a1097b;
+}
+
+#startButton:disabled,
+#resetButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
